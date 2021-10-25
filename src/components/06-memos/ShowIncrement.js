@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ShowIncrement = ({increment}) => {
+export const ShowIncrement = React.memo(({increment}) => {
     console.log('me volvi a generar')
     return (
         <div>
@@ -12,4 +12,4 @@ export const ShowIncrement = ({increment}) => {
             </button>
         </div>
     )
-}
+})
